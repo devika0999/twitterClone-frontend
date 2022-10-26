@@ -1,0 +1,67 @@
+<section class="vh-200" style="background-color: #222327;">
+    <div class="container  py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              
+              <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+  
+                  <form>
+                    
+  
+                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;"><B>SIGN UP</B></h5>
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example17">NAME</label>
+                        <input type="text" id="form2Example17" class="form-control form-control-lg"  name="name" [(ngModel)]="name" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example17">DATE OF BIRTH</label>
+                        <input type="text" id="form2Example17" class="form-control form-control-lg"  name="dob" [(ngModel)]="dob"/>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example17">MOBILE NUMBER</label>
+                        <input type="text" id="form2Example17" class="form-control form-control-lg" name="mobile" [(ngModel)]="mobile" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example17">PLACE</label>
+                        <input type="text" id="form2Example17" class="form-control form-control-lg"  name="place" [(ngModel)]="place"/>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example17">EMAIL</label>
+                        <input type="text" id="form2Example17" class="form-control form-control-lg"  name="email" [(ngModel)]="email"/>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example17">PASSWORD</label>
+                        <input type="text" id="form2Example17" class="form-control form-control-lg" name="password" [(ngModel)]="password" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example17">CONFIRM PASSWORD</label>
+                        <input type="text" id="form2Example17" class="form-control form-control-lg" />
+                    </div>
+                    <div class="form-outline mb-4">
+                       <button class="btn btn-dark" (click)="readValues()">REGISTER</button>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <a  class="nav-link" href="/" >GO TO LOGIN</a>
+                    </div>
+
+                    
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
