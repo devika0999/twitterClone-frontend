@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <app-navbar></app-navbar>
+        
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            welcome {{name}}
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">Tweet</label>
+                    <textarea  id="" cols="30" rows="10" class="form-control" name="message" [(ngModel)]="message"></textarea>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-info" (click)="addtweets()">Submit</button>
+                </div>
+                <br><br>
+
+                <div class="row g-3">
+                    <div *ngFor="let i of viewTweet "class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <div class="card">
+                            <h5 class="card-header">{{i.name}}</h5>
+                            <div class="card-body">
+                              <h5 class="card-title">{{i.message}}</h5>
+                              <p class="card-text">{{i.postdate}}</p>
+                             
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
